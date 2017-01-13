@@ -1,0 +1,1844 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>中酒网</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/index.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--head，Nav，部分开始-->
+		<div class="header-outer">
+			<div class="header">
+				<span class="top-left">您好，欢迎来到  <span class="zjw-name">中酒网！</span><a class="go" href="#">去买家中心</a></span>
+				<ul id="login">
+					<li><a class="L-line" href="login.html">请登录</a></li>
+					<li><a href="register.html">免费注册</a></li>
+				</ul>
+				<ul id="list-right">
+					<li class="my-zjw">
+						<a href="#">我的中酒网<b class="dropdown"></b></a>
+							<ol class="dropdown-menu">
+								<li><a href="#">已买到的商品</a></li>
+								<li><a href="#">我关注的商品</a></li>
+								<li><a href="#">我关注的店铺</a></li>
+							</ol>
+					</li>
+					<li><a class="car-icon" href="shopingCart.html"><em></em>购物车<span>0</span>件</a></li>
+					<li class="wx"><a href="#">微信端<b class="d-line"></b></a>
+						<div class="dropdown-wx">
+							<img src="img/base/wx.jpg"/>
+						</div>
+					</li>
+					<li class="app"><a href="#">APP <b class="d-line"></b></a>
+						<div class="dropdown-download">
+							<img src="img/base/下载.gif"/>
+							<p class="sao">扫描二维码</p>
+							<p class="xia">下载客户端</p>
+						</div>
+					</li>
+					<li class="seller">
+						<a href="#">卖家中心<b class="dropdown"></b></a>
+						<ol class="dropdown-menu-2">
+								<li><a href="#">商家入驻</a></li>
+								<li><a href="#">已卖出商品</a></li>
+								<li><a href="#">发布商品</a></li>
+								<li><a href="#">管理商品</a></li>
+							</ol>
+					</li>
+					<li class="phone-num"><a href="#">订购热线：400-798-9999</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="top-outer">
+			<div id="top">
+				<a id="logo" href="index.html"><img src="img/base/logo.png"/></a>
+				<div class="seek">
+					<div class="seekBy" >
+						商品 <b></b>
+					</div>
+					<ul class="popup" >
+						<li>商品</li>
+						<li>店铺</li>
+					</ul>
+					<input class="txt" type="text" placeholder="茅台" />
+					<a class="btn" href="#">搜索</a>
+				</div>
+				<p class="hot-word">
+					<a href="#">五粮液</a>
+					<a href="#">汾酒</a>
+					<a href="#">剑南春</a>
+					<a href="#">泸州老窖</a>
+				</p>
+				<div class="top-ad">
+					<a href="#">
+						<img src="img/base/201610211352319102520.png"/>
+					</a>
+				</div>	
+			</div>
+			<!--导航栏-->
+			<div id="nav">
+				<div id="menu">
+					<a class="cart" href="#">全部商品分类</a>
+				</div>
+				<ul id="cart-all">
+					<li class="white-spirit cart-bg">
+						<h3><i></i><a href="#">白酒</a></h3>
+						<p>
+							<a href="#">茅台</a>
+							<a class="active" href="#">天佑德</a>
+							<a href="#">五粮液</a>
+						</p>
+					</li>
+					<div class="cart-more">
+						<dl>
+							<dt>品牌</dt>
+							<dd>
+								<ul>
+									<li><a href="#">剑南春</a></li>
+									<li><a href="#">泸州老窖</a></li>
+									<li><a href="#">洋河</a></li>
+									<li><a href="#">汾酒</a></li>
+									<li><a href="#">小糊涂仙</a></li>
+									<li><a href="#">郎酒</a></li>
+									<li><a href="#">杜康</a></li>
+									<li><a href="#">古井</a></li>
+									<li><a href="#">衡水老白干</a></li>
+									<li><a href="#">孔府家</a></li>
+									<li><a href="#">西凤</a></li>
+									<li><a href="#">国台</a></li>
+									<li><a href="#">牛栏山</a></li>
+								</ul>
+							</dd>
+							<dt>香型</dt>
+							<dd>
+								<ul>
+									<li><a href="#">酱香型</a></li>
+									<li><a href="#">浓香型</a></li>
+									<li><a href="#">绵柔型</a></li>
+									<li><a href="#">清香型</a></li>
+									<li><a href="#">特香型</a></li>
+									<li><a href="#">茧香型</a></li>
+									<li><a href="#">凤香型</a></li>
+								</ul>
+							</dd>
+							<dt>产地</dt>
+							<dd>
+								<ul>
+									<li><a href="#">贵州</a></li>
+									<li><a href="#">江西</a></li>
+									<li><a href="#">四川</a></li>
+									<li><a href="#">江苏</a></li>
+									<li><a href="#">山西</a></li>
+									<li><a href="#">内蒙</a></li>
+									<li><a href="#">河南</a></li>
+									<li><a href="#">青海</a></li>
+								</ul>
+							</dd>
+						</dl>
+						
+						<div class="cart-more-ad">
+							<h3>推荐品牌</h3>
+						</div>
+					</div>
+					<li class="grape cart-bg">
+						<h3><i></i><a href="#">葡萄酒</a></h3>
+						<p>
+							<a class="active" href="#">拉菲</a>
+							<a href="#">马克威斯</a>
+							<a href="#">黄尾袋鼠</a>
+						</p>
+					</li>
+					
+					<div class="cart-more">
+						<dl>
+							<dt>品牌</dt>
+							<dd>
+								<ul>
+									<li><a href="#">佩西</a></li>
+									<li><a href="#">张裕</a></li>
+									<li><a href="#">乐船</a></li>
+									<li><a href="#">小龙船</a></li>
+									<li><a href="#">圣迪斯</a></li>
+									<li><a href="#">奔富</a></li>
+									<li><a href="#">美圣世家</a></li>
+									<li><a href="#">康迪</a></li>
+									<li><a href="#">特拉托</a></li>
+								</ul>
+							</dd>
+							<dt>品种</dt>
+							<dd>
+								<ul>
+									<li><a href="#">干红葡萄</a></li>
+									<li><a href="#">干白葡萄</a></li>
+									<li><a href="#">气泡/香槟</a></li>
+									<li><a href="#">冰酒</a></li>
+									<li><a href="#">果酒</a></li>
+									<li><a href="#">甜桃红</a></li>
+									<li><a href="#">甜白</a></li>
+								</ul>
+							</dd>
+							<dt>产地</dt>
+							<dd>
+								<ul>
+									<li><a href="#">法国</a></li>
+									<li><a href="#">西班牙</a></li>
+									<li><a href="#">智利</a></li>
+									<li><a href="#">阿根廷</a></li>
+									<li><a href="#">澳大利亚</a></li>
+									<li><a href="#">南非</a></li>
+									<li><a href="#">中国</a></li>
+									<li><a href="#">美国</a></li>
+								</ul>
+							</dd>
+						</dl>
+						
+						<div class="cart-more-ad">
+							<h3>推荐品牌</h3>
+						</div>
+					</div>
+					
+					<li class="foreign-wine cart-bg">
+						<h3><i></i><a href="#">洋酒</a></h3>
+						<p>
+							<a class="active" href="#">马爹利</a>
+							<a href="#">人头马</a>
+							<a href="#">芝华士</a>
+						</p>
+					</li>
+					
+					<div class="cart-more">
+						<dl>
+							<dt>品牌</dt>
+							<dd>
+								<ul>
+									<li><a href="#">皇家贝斯</a></li>
+									<li><a href="#">兄弟</a></li>
+									<li><a href="#">深蓝</a></li>
+									<li><a href="#">白香甜</a></li>
+									<li><a href="#">绝对伏特加</a></li>
+									<li><a href="#">杰克丹尼</a></li>
+									<li><a href="#">百龄坛</a></li>
+									<li><a href="#">百加得</a></li>
+									<li><a href="#">尊尼获加</a></li>
+									<li><a href="#">叶卡</a></li>
+									<li><a href="#">轩尼诗</a></li>
+									<li><a href="#">皇家礼炮</a></li>
+									<li><a href="#">摩根船长</a></li>
+								</ul>
+							</dd>
+							<dt>品种</dt>
+							<dd>
+								<ul>
+									<li><a href="#">聚会用酒</a></li>
+									<li><a href="#">商务用酒</a></li>
+								</ul>
+							</dd>
+							<dt>产地</dt>
+							<dd>
+								<ul>
+									<li><a href="#">中国</a></li>
+									<li><a href="#">法国</a></li>
+									<li><a href="#">英国</a></li>
+									<li><a href="#">美国</a></li>
+								</ul>
+							</dd>
+						</dl>
+						
+						<div class="cart-more-ad">
+							<h3>推荐品牌</h3>
+						</div>
+					</div>
+					
+					<li class="yellow-wine cart-bg">
+						<h3><i></i><a href="#">黄酒</a></h3>
+						<p>
+							<a href="#">女儿红</a>
+							<a class="active" href="#">劲酒</a>
+							<a href="#">尧喝货</a>
+						</p>
+					</li>
+					
+					<div class="cart-more">
+						<dl>
+							<dt>品牌</dt>
+							<dd>
+								<ul>
+									<li><a href="#">塔牌</a></li>
+									<li><a href="#">古越龙山</a></li>
+									<li><a href="#">石库门</a></li>
+									<li><a href="#">会稽山</a></li>
+									<li><a href="#">唐宋</a></li>
+								</ul>
+							</dd>
+							<dt>品种</dt>
+							<dd>
+								<ul>
+									<li><a href="#">聚会用酒</a></li>
+									<li><a href="#">礼节拜访</a></li>
+									<li><a href="#">婚庆用酒</a></li>
+								</ul>
+							</dd>
+						</dl>
+						
+						<div class="cart-more-ad">
+							<h3>推荐品牌</h3>
+						</div>
+					</div>
+					
+					<li class="gift-box cart-bg">
+						<h3><i></i><a href="#">礼品专区</a></h3>
+						<p>
+							<a class="active" href="#">国台好礼</a>
+							<a href="#">成龙祥凤</a>
+						</p>
+					</li>
+					
+					<div class="cart-more">
+						<dl>
+							<dt>品牌</dt>
+							<dd>
+								<ul>
+									<li><a href="#">礼盒</a></li>
+									<li><a href="#">五粮液</a></li>
+									<li><a href="#">汾酒</a></li>
+									<li><a href="#">茅台</a></li>
+									<li><a href="#">剑南春</a></li>
+									<li><a href="#">张裕</a></li>
+									<li><a href="#">拉菲</a></li>
+								</ul>
+							</dd>
+							<dt>类型</dt>
+							<dd>
+								<ul>
+									<li><a href="#">酱香型</a></li>
+									<li><a href="#">浓香型</a></li>
+									<li><a href="#">干红葡萄</a></li>
+									<li><a href="#">干白葡萄</a></li>
+								</ul>
+							</dd>
+							<dt>产地</dt>
+							<dd>
+								<ul>
+									<li><a href="#">四川</a></li>
+									<li><a href="#">贵州</a></li>
+									<li><a href="#">法国</a></li>
+									<li><a href="#">美国</a></li>
+								</ul>
+							</dd>
+						</dl>
+						
+						<div class="cart-more-ad">
+							<h3>推荐品牌</h3>
+						</div>
+					</div>
+					
+					<li class="webbing cart-bg">
+						<h3><i></i><a href="#">婚庆专区</a></h3>
+						<p>
+							<a class="active" href="#">茅台</a>
+							<a href="#">拉菲</a>
+							<a href="#">五粮液</a>
+							<a href="#">张裕</a>
+						</p>
+					</li>
+					
+					<div class="cart-more">
+						<dl>
+							<dt>品牌</dt>
+							<dd>
+								<ul>
+									<li><a href="#">剑南春</a></li>
+									<li><a href="#">泸州老窖</a></li>
+									<li><a href="#">伊莎特</a></li>
+									<li><a href="#">佩西</a></li>
+									<li><a href="#">卡莎玛利亚</a></li>
+									<li><a href="#">龙船康帝</a></li>
+									<li><a href="#">郎酒</a></li>
+								</ul>
+							</dd>
+							<dt>种类</dt>
+							<dd>
+								<ul>
+									<li><a href="#">白酒</a></li>
+									<li><a href="#">红酒</a></li>
+									<li><a href="#">洋酒</a></li>
+									<li><a href="#">起泡酒</a></li>
+									<li><a href="#">黄酒</a></li>
+								</ul>
+							</dd>
+							<dt>产地</dt>
+							<dd>
+								<ul>
+									<li><a href="#">贵州</a></li>
+									<li><a href="#">四川</a></li>
+									<li><a href="#">南非</a></li>
+									<li><a href="#">法国</a></li>
+									<li><a href="#">英国</a></li>
+								</ul>
+							</dd>
+						</dl>
+						
+						<div class="cart-more-ad">
+							<h3>推荐品牌</h3>
+						</div>
+					</div>
+					
+				</ul>
+				
+				<ul class="nav-right">
+					<li class="nav-first"><a href="#">首页</a></li>
+					<li><a href="#">天佑德专场</a></li>
+					<li><a href="#">白酒会场</a></li>
+					<li><a href="#">红酒会场</a></li>
+					<li><a href="#">会员中心</a></li>
+					<li><a href="#">重要公告</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		
+		
+		<!--=========banner层开始=============-->
+		<div class="banner">
+			<ul id="list1">
+				
+			</ul>
+			<ul id="list2">
+				
+			</ul>
+			<div class="small-ad">
+				<a href="#"><img src="img/index/201611021011479396050.jpg"/></a>
+			</div>
+			<div class="small-ad small-ad-last">
+				<a href="#"><img src="img/index/201610311757091591390.jpg"/></a>
+			</div>
+		</div>
+		
+		
+		<!--========小活动和抢购活动=========-->
+		<div class="ad">
+			<ul>
+				<li><a href="#"><img src="img/index/201611021101113988110.jpg"/></a></li>
+				<li><a href="#"><img src="img/index/201609211039483793050.jpg"/></a></li>
+				<li><a href="#"><img src="img/index/201610181811425196950.jpg"/></a></li>
+			</ul>
+		</div>
+		
+		
+		<div class="limit-buy">
+			<div class="limit-buy-title"></div>
+			<ul class="limit-buy-goods">
+				<li>
+					<a class="limit-Img" href="#"><img src=""/></a>
+					<p></p>
+					<span>RMB<b></b></span>
+					<a class="limit-Btn" href="#">立即抢购<i></i></a>
+				</li>
+				
+				<li>
+					<a class="limit-Img" href="#"><img src=""/></a>
+					<p></p>
+					<span>RMB<b></b></span>
+					<a class="limit-Btn" href="#">立即抢购<i></i></a>
+				</li>
+				
+				<li>
+					<a class="limit-Img" href="#"><img src=""/></a>
+					<p></p>
+					<span>RMB<b></b></span>
+					<a class="limit-Btn" href="#">立即抢购<i></i></a>
+				</li>
+				
+				<li>
+					<a class="limit-Img" href="#"><img src=""/></a>
+					<p></p>
+					<span>RMB<b></b></span>
+					<a class="limit-Btn" href="#">立即抢购<i></i></a>
+				</li>
+				
+				<li>
+					<a class="limit-Img" href="#"><img src=""/></a>
+					<p></p>
+					<span>RMB<b></b></span>
+					<a class="limit-Btn" href="#">立即抢购<i></i></a>
+				</li>
+			</ul>
+		</div>
+		
+		
+		<!--人气单品-->
+		<div class="hot-goods">
+			<h3>人气单品</h3>
+			<ul class="hot-Img">
+				<li><a href="#"><img src="img/index/201610291145116961590.jpg"/></a></li>
+				<li><a href="#"><img src="img/index/201610291343540914690.jpg"/></a></li>
+				<li><a href="#"><img src="img/index/201610291145336141980.jpg"/></a></li>
+				<li class="Img-right"><a href="#"><img src="img/index/201610291145442378170.jpg"/></a></li>
+				<li><a href="#"><img src="img/index/201610291147069803620.jpg"/></a></li>
+				<li><a href="#"><img src="img/index/201610291146321455010.jpg"/></a></li>
+				<li><a href="#"><img src="img/index/201610291149047449690.jpg"/></a></li>
+				<li class="Img-right"><a href="#"><img src="img/index/201610291145545962350.jpg"/></a></li>
+			</ul>
+		</div>
+		
+		
+		
+		<!--精选精品-->
+		<div class="goods-outer">
+			<div class="goods-hd">
+				<h3>精选尚品</h3>
+				<ul class="hd-nav">
+					<li class="active at1">热卖推荐<i></i></li>
+					<li class="at1" >朋友聚会<i></i></li>
+					<li class="at1">自己喝<i></i></li>
+					<li class="at1">送礼必备<i></i></li>
+					<li class="at1">大型宴请<i></i></li>
+				</ul>
+			</div>
+			<div class="goods-menu">
+				<ul class="menu-list">
+					<li><a href="#">五粮液</a></li>
+					<li><a href="#">拉菲</a></li>
+					<li><a href="#">茅台</a></li>
+					<li><a href="#">张裕</a></li>
+					<li><a href="#">天佑德</a></li>
+					<li><a href="#">泸州老窖</a></li>
+					<li><a href="#">洋河</a></li>
+					<li><a href="#">剑南春</a></li>
+				</ul>
+				<div class="goods-logo">
+					<ul class="logo-list">
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_326.jpg"/></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/index/logo_883.jpg"/></a>
+							<a href="#"><img src="img/index/logo_838.jpg"/></a>
+							<a href="#"><img src="img/index/logo_697.jpg"/></a>
+							<a href="#"><img src="img/index/logo_343.jpg"/></a>
+						</li>
+					</ul>
+				</div>
+				<span class="prev"></span>
+				<span class="next"></span>
+			</div>
+			
+			<div class="goods-block">
+				<div class="block  tabChange1">
+					<a class="hb-pic p1" href="#"><img src=""/></a>
+					<a class="hb-pic p2" href="#"><img src=""/></a>
+					<a class="hb-pic p3" href="#"><img src=""/></a>
+					<a class="hb-pic p4" href="#"><img src=""/></a>
+					<a class="hb-pic p5" href="#"><img src=""/></a>
+				</div>
+				
+				
+				<ul class="block-tab tabChange1">
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+				</ul>
+				
+				<ul class="block-tab tabChange1">
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="goods-details.html"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+				</ul>
+				
+				<ul class="block-tab tabChange1">
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+				</ul>
+				
+				<ul class="block-tab tabChange1">
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="goods-hb">
+				<a class="hb-pic" href="#"><img src=""/></a>
+				<a class="hb-pic" href="#"><img src=""/></a>
+				<a class="hb-pic" href="#"><img src=""/></a>
+				<a class="last-a hb-pic" href="#"><img src=""/></a>
+			</div>
+			
+		</div>
+		
+		
+		
+		<!--======白酒馆==========-->
+		<div class="goods-outer">
+			<div class="goods-hd">
+				<h3>白酒馆</h3>
+				<ul class="hd-nav">
+					<li class="active at2">热卖推荐<i></i></li>
+					<li class="at2">洋河<i></i></li>
+					<li class="at2">天佑德<i></i></li>
+					<li class="at2">茅台<i></i></li>
+					<li class="at2">五粮液<i></i></li>
+				</ul>
+			</div>
+			<div class="goods-menu  whitejiu">
+				<ul class="menu-list">
+					<li><a href="#">茅台</a></li>
+					<li><a href="#">五粮液</a></li>
+					<li><a href="#">天佑德</a></li>
+					<li><a href="#">洋河</a></li>
+					<li><a href="#">剑南春</a></li>
+					<li><a href="#">泸州老窖</a></li>
+					<li><a href="#">牛栏山</a></li>
+					<li><a href="#">一道泓</a></li>
+				</ul>
+				<div class="goods-logo">
+					<ul class="logo-list">
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a href="#"><img src="img/index/logo_343.jpg"/></a>
+							<a href="#"><img src="img/index/logo_538.jpg"/></a>
+							<a href="#"><img src="img/index/logo_838.jpg"/></a>
+						</li>
+					</ul>
+				</div>
+				<span class="prev"></span>
+				<span class="next"></span>
+			</div>
+			
+			<div class="goods-block">
+				<div class="block  tabChange2">
+					<a class="hb-pic p1" href="#"><img src=""/></a>
+					<a class="hb-pic p2" href="#"><img src=""/></a>
+					<a class="hb-pic p3" href="#"><img src=""/></a>
+					<a class="hb-pic p4" href="#"><img src=""/></a>
+					<a class="hb-pic p5" href="#"><img src=""/></a>
+				</div>
+				
+				
+				<ul class="block-tab tabChange2">
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+				</ul>
+				
+				<ul class="block-tab tabChange2">
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+				</ul>
+				
+				<ul class="block-tab tabChange2">
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+				</ul>
+				
+				<ul class="block-tab tabChange2">
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="goods-hb">
+				<a class="hb-pic" href="#"><img src=""/></a>
+				<a class="hb-pic" href="#"><img src=""/></a>
+				<a class="hb-pic" href="#"><img src=""/></a>
+				<a class="last-a hb-pic" href="#"><img src=""/></a>
+			</div>
+		</div>
+		
+		
+		
+		<!--========红酒馆=========-->
+		<div class="goods-outer">
+			<div class="goods-hd">
+				<h3>红酒馆</h3>
+				<ul class="hd-nav">
+					<li class="active at3">热卖推荐<i></i></li>
+					<li class="at3">拉菲<i></i></li>
+					<li class="at3">张裕<i></i></li>
+				</ul>
+			</div>
+			<div class="goods-menu  redjiu">
+				<ul class="menu-list">
+					<li><a href="#">拉菲</a></li>
+					<li><a href="#">伊莎特</a></li>
+					<li><a href="#">张裕</a></li>
+					<li><a href="#">黄尾袋鼠</a></li>
+					<li><a href="#">库马拉</a></li>
+					<li><a href="#">龙船</a></li>
+					<li><a href="#">圣迪斯</a></li>
+					<li><a href="#">奔富</a></li>
+				</ul>
+				<div class="goods-logo">
+					<ul class="logo-list">
+						<li>
+							<a href="#"><img src="img/index/logo_632.jpg"/></a>
+							<a href="#"><img src="img/index/logo_884.jpg"/></a>
+							<a href="#"><img src="img/index/logo_543.jpg"/></a>
+							<a href="#"><img src="img/index/logo_697.jpg"/></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/index/logo_883.jpg"/></a>
+							<a href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a href="#"><img src="img/index/logo_798.jpg"/></a>
+							<a href="#"><img src="img/index/logo_457.jpg"/></a>
+						</li>
+					</ul>
+				</div>
+				<span class="prev"></span>
+				<span class="next"></span>
+			</div>
+			
+			<div class="goods-block">
+				<div class="block  tabChange3">
+					<a class="hb-pic p1" href="#"><img src=""/></a>
+					<a class="hb-pic p2" href="#"><img src=""/></a>
+					<a class="hb-pic p3" href="#"><img src=""/></a>
+					<a class="hb-pic p4" href="#"><img src=""/></a>
+					<a class="hb-pic p5" href="#"><img src=""/></a>
+				</div>
+				
+				
+				<ul class="block-tab tabChange3">
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+				</ul>
+				
+				<ul class="block-tab tabChange3">
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+				</ul>
+				
+				
+			</div>
+			
+			<div class="goods-hb">
+				<a class="hb-pic" href="#"><img src=""/></a>
+				<a class="hb-pic" href="#"><img src=""/></a>
+				<a class="hb-pic" href="#"><img src=""/></a>
+				<a class="last-a hb-pic" href="#"><img src=""/></a>
+			</div>
+		</div>
+		
+		
+		<!--======洋酒&啤酒馆=======-->
+		<div class="goods-outer">
+			<div class="goods-hd">
+				<h3>洋酒&amp;啤酒馆</h3>
+				<ul class="hd-nav">
+					<li class="active at4">热卖推荐<i></i></li>
+					<li class="at4">伏特加<i></i></li>
+					<li class="at4">威士忌<i></i></li>
+				</ul>
+			</div>
+			<div class="goods-menu  yangjiu">
+				<ul class="menu-list">
+					<li><a href="#">人头马</a></li>
+					<li><a href="#">马爹利</a></li>
+					<li><a href="#">轩尼诗</a></li>
+					<li><a href="#">绝对伏特加</a></li>
+					<li><a href="#">百加得</a></li>
+					<li><a href="#">翰格蓝爵</a></li>
+					<li><a href="#">皇家礼炮</a></li>
+					<li><a href="#">深蓝</a></li>
+				</ul>
+				<div class="goods-logo">
+					<ul class="logo-list">
+						<li>
+							<a href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a href="#"><img src="img/index/logo_794.jpg"/></a>
+							<a href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a href="#"><img src="img/index/logo_665.jpg"/></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/index/logo_632.jpg"/></a>
+							<a href="#"><img src="img/index/logo_840.jpg"/></a>
+							<a href="#"><img src="img/index/logo_642.jpg"/></a>
+							<a href="#"><img src="img/index/logo_534.jpg"/></a>
+						</li>
+					</ul>
+				</div>
+				<span class="prev"></span>
+				<span class="next"></span>
+			</div>
+			
+			<div class="goods-block">
+				<div class="block  tabChange4">
+					<a class="hb-pic p1" href="#"><img src=""/></a>
+					<a class="hb-pic p2" href="#"><img src=""/></a>
+					<a class="hb-pic p3" href="#"><img src=""/></a>
+					<a class="hb-pic p4" href="#"><img src=""/></a>
+					<a class="hb-pic p5" href="#"><img src=""/></a>
+				</div>
+				
+				
+				<ul class="block-tab tabChange4">
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+				</ul>
+				
+				<ul class="block-tab tabChange4">
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li>
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+					<li class="li-right">
+						<a class="goods-img" href="#"><img src=""/></a>
+						<span class="goods-price"></span>
+						<a class="goods-title" href="#"></a>
+					</li>
+				</ul>
+				
+				
+			</div>
+			
+			<div class="goods-hb">
+				<a class="hb-pic" href="#"><img src=""/></a>
+				<a class="hb-pic" href="#"><img src=""/></a>
+				<a class="hb-pic" href="#"><img src=""/></a>
+				<a class="last-a hb-pic" href="#"><img src=""/></a>
+			</div>
+		</div>
+		
+		
+		<!--=======品牌旗舰店========-->
+		<div class="store">
+			<h3>品牌旗舰店</h3>
+			<div class="store-leftPic">
+				<a href="#"><img src="img/index/201609211049333737650.jpg"/></a>
+			</div>
+			<div class="store-outer">
+				<div class="storeLogo">
+					<ul class="storeLogo-list">
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+							<a class="m-right" href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_330.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_332.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_334.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_335.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_336.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_337.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_339.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_342.jpg"/></a>
+						</li>
+						
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+							<a class="m-right" href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_330.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_332.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_334.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_335.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_336.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_337.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_339.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_342.jpg"/></a>
+						</li>
+						
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+							<a class="m-right" href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_330.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_332.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_334.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_335.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_336.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_337.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_339.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_342.jpg"/></a>
+						</li>
+						
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+							<a class="m-right" href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_330.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_332.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_334.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_335.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_336.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_337.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_339.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_342.jpg"/></a>
+						</li>
+						
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+							<a class="m-right" href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_330.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_332.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_334.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_335.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_336.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_337.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_339.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_342.jpg"/></a>
+						</li>
+						
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+							<a class="m-right" href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_330.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_332.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_334.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_335.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_336.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_337.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_339.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_342.jpg"/></a>
+						</li>
+						
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+							<a class="m-right" href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_330.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_332.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_334.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_335.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_336.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_337.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_339.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_342.jpg"/></a>
+						</li>
+						
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+							<a class="m-right" href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_330.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_332.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_334.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_335.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_336.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_337.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_339.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_342.jpg"/></a>
+						</li>
+						
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+							<a class="m-right" href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_330.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_332.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_334.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_335.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_336.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_337.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_339.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_342.jpg"/></a>
+						</li>
+						
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+							<a class="m-right" href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_330.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_332.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_334.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_335.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_336.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_337.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_339.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_342.jpg"/></a>
+						</li>
+						
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+							<a class="m-right" href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_330.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_332.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_334.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_335.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_336.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_337.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_339.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_342.jpg"/></a>
+						</li>
+						
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+							<a class="m-right" href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_330.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_332.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_334.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_335.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_336.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_337.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_339.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_342.jpg"/></a>
+						</li>
+						
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+							<a class="m-right" href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_330.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_332.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_334.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_335.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_336.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_337.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_339.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_342.jpg"/></a>
+						</li>
+						
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+							<a class="m-right" href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_330.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_332.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_334.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_335.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_336.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_337.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_339.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_342.jpg"/></a>
+						</li>
+						
+						<li>
+							<a href="#"><img src="img/index/logo_322.jpg"/></a>
+							<a href="#"><img src="img/index/logo_323.jpg"/></a>
+							<a href="#"><img src="img/index/logo_324.jpg"/></a>
+							<a href="#"><img src="img/index/logo_325.jpg"/></a>
+							<a class="m-right" href="#"><img src="img/index/logo_326.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_329.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_330.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_331.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_332.jpg"/></a>
+							<a class="m-top m-right" href="#"><img src="img/index/logo_334.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_335.jpg"/></a>
+							<a class="m-top" href="#"><img src="img/index/logo_336.jpg"/></a>
+					</ul>
+				</div>
+					<b class="prev_"></b>
+					<b class="next_"></b>
+			</div>
+			<div class="store-rightPic">
+				<a href="#"><img src="img/index/201609211049495626910.jpg"/></a>
+			</div>
+		</div>
+		
+		
+		<!--====商品楼梯=====-->
+		<div class="louti">
+			<ul>
+				<li><b>1F</b><span>选</span></li>
+				<li><b>2F</b><span>酒</span></li>
+				<li><b>3F</b><span>酒</span></li>
+				<li><b>4F</b><span>酒</span></li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		<!--底部footer层，-->
+		<div class="footer1-outer">
+			<div id="footer1">
+				<ul>
+					<li class="zp">
+						<i></i>
+						<h3>正品保障</h3>
+						<p>厂家直销 正品防伪</p>
+					</li>
+					<li class="lj">
+						<i></i>
+						<h3>领军 o2o</h3>
+						<p>中国酒类 o2o第一家</p>
+					</li>
+					<li class="wl">
+						<i></i>
+						<h3>无理由退货</h3>
+						<p>拆封无条件退货</p>
+					</li>
+					<li class="sd">
+						<i></i>
+						<h3>闪电配送</h3>
+						<p>专业配送 安全到达</p>
+					</li>
+					<li class="bw">
+						<i></i>
+						<h3>百万口碑</h3>
+						<p>400万用户的认可</p>
+					</li>
+					<li class="jp">
+						<i></i>
+						<h3>金牌服务</h3>
+						<p>7*24小时贴心服务</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="footer2-outer">
+			<div id="footer2">
+				<div class="zj-icon">
+					<a href="#">
+						<img src="img/base/zj2.png"/>
+					</a>
+					<a href="#">
+						<img src="img/base/ls.png"/>
+					</a>
+					<a href="#">
+						<img src="img/base/yt.png"/>
+					</a>
+				</div>
+				<dl class="wrap-link">
+					<dt class="Title"><h3>购物流程</h3></dt>
+					<dd><a href="#">购物流程</a></dd>
+					<dd><a href="#">用户注册协议</a></dd>
+					<dd><a href="#">会员积分</a></dd>
+					<dd><a href="#">发票问题</a></dd>
+					<dd><a href="#">优惠券问题</a></dd>
+				</dl>
+				<dl class="wrap-link">
+					<dt class="Title"><h3>配送说明</h3></dt>
+					<dd><a href="#">99免运费</a></dd>
+					<dd><a href="#">配送说明</a></dd>
+					<dd><a href="#">快递查询</a></dd>
+					<dd><a href="#">验货与签收</a></dd>
+				</dl>
+				<dl class="wrap-link">
+					<dt class="Title"><h3>支付方式</h3></dt>
+					<dd><a href="#">支付版</a></dd>
+					<dd><a href="#">银联/信用卡</a></dd>
+					<dd><a href="#">微信支付</a></dd>
+					<dd><a href="#">货到付款</a></dd>
+					<dd><a href="#">账户余额支付</a></dd>
+				</dl>
+				<dl class="wrap-link">
+					<dt class="Title"><h3>售后服务</h3></dt>
+					<dd><a href="#">常见问题</a></dd>
+					<dd><a href="#">服务承诺</a></dd>
+					<dd><a href="#">退款说明</a></dd>
+					<dd><a href="#">退换货政策</a></dd>
+					<dd><a href="#">退换货流程</a></dd>
+				</dl>
+				<dl class="wrap-link">
+					<dt class="Title"><h3>服务保障</h3></dt>
+					<dd><a href="#">30分钟快速响应</a></dd>
+					<dd><a href="#">7*24小时贴心服务</a></dd>
+					<dd><a href="#">真品防伪四码合一</a></dd>
+				</dl>
+				
+				<ul class="qrcode">
+					<li>
+						<h3>手机中酒</h3>
+						<img src="img/base/mob.jpg"/>
+						<a href="#">下载移动客户端</a>
+					</li>
+					<li>
+						<h3>中酒微信</h3>
+						<img src="img/base/wx.jpg"/>
+						<a href="#">中酒官方微信</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="footer3-outer">
+			<div id="footer3">
+				<a href="#">关于中酒</a>
+				<a href="#">媒体报道</a>
+				<a href="#">商务合作</a>
+				<a href="#">品牌入驻</a>
+				<a href="#">加入中酒</a>
+				<a href="#">商家加盟</a>
+				<a class="last-a" href="#">联系我们</a>
+			</div>
+		</div>
+		<div class="footer4-outer">
+			<div id="footer4">
+				<p>Copyright © 2016 中酒网(www.zhongjiu.cn) 版权所有 京ICP备12022216号-2 | 京公网安备 11010502026701 | 购买前请确认达到法定饮酒年龄！中酒网不销售任何含酒精产品给18岁以下人士！</p>
+				<div class="msg">
+					<a href="#"><img src="img/base/authentication_01.png"/></a>
+					<a href="#"><img src="img/base/brand_bottom_large.jpg"/></a>
+					<a href="#"><img src="img/base/cnnic.png"/></a>
+					<a href="#"><img src="img/base/authentication_05.png"/></a>
+					<a href="#"><img src="img/base/authentication_07.png"/></a>
+					<a href="#"><img src="img/base/authentication_09.png"/></a>
+				</div>
+			</div>
+		</div>
+		
+		<!--右侧工具栏-->
+		<div id="fixed-right">
+			<ul class="fixed-menu">
+				<li class="right-user right-menu">
+					<i></i>
+					<span class="ups">个人中心</span>
+				</li>
+				<s></s>
+				<li class="right-car right-menu">
+					<i></i>
+					<p>购 物 车</p>
+					<b id="end">0</b>
+				</li>
+				<s></s>
+				<li class="right-asset right-menu">
+					<i></i>
+					<span class="ups">资产中心</span>
+				</li>
+				<li class="right-like right-menu">
+					<i></i>
+					<span class="ups">关注商品</span>
+				</li>
+				<li class="right-history right-menu">
+					<i></i>
+					<span class="ups">浏览历史</span>
+				</li>
+			</ul>
+			<div class="btn-top right-menu">
+				<i class="go-top"></i>
+				<span class="ups">返回顶部</span>
+			</div>
+		</div>
+	</body>
+</html>

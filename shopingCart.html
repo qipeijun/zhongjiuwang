@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>购物车结算</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/shopingCart.css"/>
+		<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/shopingCart.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--head，Nav，部分开始-->
+		<div class="header-outer">
+			<div class="header">
+				<span class="top-left">您好，欢迎来到  <span class="zjw-name">中酒网！</span><a class="go" href="#">去买家中心</a></span>
+				<ul id="login">
+					<li><a class="L-line" href="login.html">请登录</a></li>
+					<li><a href="register.html">免费注册</a></li>
+				</ul>
+				<ul id="list-right">
+					<li class="my-zjw">
+						<a href="#">我的中酒网<b class="dropdown"></b></a>
+							<ol class="dropdown-menu">
+								<li><a href="#">已买到的商品</a></li>
+								<li><a href="#">我关注的商品</a></li>
+								<li><a href="#">我关注的店铺</a></li>
+							</ol>
+					</li>
+					<li><a class="car-icon" href="shopingCart.html"><em></em>购物车<span>0</span>件</a></li>
+					<li class="wx"><a href="#">微信端<b class="d-line"></b></a>
+						<div class="dropdown-wx">
+							<img src="img/base/wx.jpg"/>
+						</div>
+					</li>
+					<li class="app"><a href="#">APP <b class="d-line"></b></a>
+						<div class="dropdown-download">
+							<img src="img/base/下载.gif"/>
+							<p class="sao">扫描二维码</p>
+							<p class="xia">下载客户端</p>
+						</div>
+					</li>
+					<li class="seller">
+						<a href="#">卖家中心<b class="dropdown"></b></a>
+						<ol class="dropdown-menu-2">
+								<li><a href="#">商家入驻</a></li>
+								<li><a href="#">已卖出商品</a></li>
+								<li><a href="#">发布商品</a></li>
+								<li><a href="#">管理商品</a></li>
+							</ol>
+					</li>
+					<li class="phone-num"><a href="#">订购热线：400-798-9999</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		
+		<div class="logo-bar">
+			<div id="logo">
+				<a href="index.html"><img src="img/cart/logo.png"/></a>
+			</div>
+			<ul class="state">
+				<li class="cur">1.我的购物车</li>
+				<li>2.填写核对订单信息</li>
+				<li>3.成功提交订单</li>
+			</ul>
+		</div>
+		<h3 class="myCart">我的购物车</h3>
+		<div class="cart-outer">
+			<div class="cart-bar">
+				<ul>
+					<li class="b1">
+						状态
+					</li>
+					<li class="b2">商品</li>
+					<li class="b3">商城价</li>
+					<li class="b4">数量</li>
+					<li class="b5">操作</li>
+				</ul>
+			</div>
+			<div class="cart-c">
+				<ul>
+					<li class="c-bar">
+						<input type="checkbox" checked="checked" id="dp"/>
+						<span>中酒自营店</span>
+					</li>
+					<li class="c-c">
+						<input class="in1" type="checkbox" checked="checked"/>
+						<a href="#"><img src="img/cart/1.png"/></a>
+						<a class="c-title" href="#">锐澳RIO鸡尾酒 6瓶组合装（6种口味）275ml</a>
+						<span class="Art">商品货号：C0001489</span>
+						<span class="price">￥69.00</span>
+						<input type="button" class="jian" value="-" />
+						<input type="text" class="vAl" value="1" />
+						<input type="button" class="jia" value="+" />
+						<a href="#" class="shanchu">删除</a>
+					</li>
+					
+					<li class="c-c">
+						<input class="in1" type="checkbox"/>
+						<a href="#"><img src="img/cart/1.png"/></a>
+						<a class="c-title" href="#">锐澳RIO鸡尾酒 6瓶组合装（6种口味）275ml</a>
+						<span class="Art">商品货号：C0001489</span>
+						<span class="price">￥69.00</span>
+						<input type="button" class="jian" value="-" />
+						<input type="text" class="vAl" value="1" />
+						<input type="button" class="jia" value="+" />
+						<a href="#" class="shanchu">删除</a>
+					</li>
+				</ul>
+				
+				
+			</div>
+			<div class="cart-dibu">
+				<span class="dibu-all">
+					<input type="checkbox" checked="checked" id="dibuBtn" />全选
+				</span>
+				<a id="Del" href="#">删除</a>
+				<span class="sl"><b class="count">2</b>件商品</span>
+				<div class="goto">去结算</div>
+				<div class="gj">
+					总计(不含运费)：<span class="sum">￥666.00</span>
+				</div>
+				
+			</div>
+			
+		</div>
+		
+		<!--阴影遮罩-->
+		<div class="ward">
+			
+		</div>
+		<!--单选删除-->
+		<div class="popup">
+			<div class="tishi">
+				<b></b>
+				确定要从购物车移除该商品吗?
+			</div>
+			<span class="yes">确定</span>
+			<span class="no">取消</span>
+		</div>
+		<!--全选删除-->
+		<div class="popup1">
+			<div class="tishi">
+				<b></b>
+				确定要从购物车移除选中的商品吗?
+			</div>
+			<span class="yes1">确定</span>
+			<span class="no1">取消</span>
+		</div>
+		
+		<!--商品推荐-->
+		<div class="rec-outer">
+			<div class="msg-outer">
+				<div class="msg">
+					<span>购物车内暂时没有商品，<a href="index.html">去首页</a>挑选喜欢的商品</span>
+				</div>
+			</div>
+			<h3>商品推荐</h3>
+			<ul class="rec-show">
+				<li class="ss">
+					<a href=""><img src="img/cart/1_220.png"/></a>
+					<p>42°绵竹大曲 100ml</p>
+					<i>去购买></i>
+				</li>
+				<li class="ss">
+					<a href=""><img src="img/cart/2_220.png"/></a>
+					<p>中酒网无纺布购物袋</p>
+					<i>去购买></i>
+				</li>
+				<li class="ss">
+					<a href=""><img src="img/cart/3_220.png"/></a>
+					<p>中酒网精美台历</p>
+					<i>去购买></i>
+				</li>
+				<li class="ss">
+					<a href=""><img src="img/cart/4_220.png"/></a>
+					<p>彩色海马刀</p>
+					<i>去购买></i>
+				</li>
+				<li class="ss last">
+					<a href=""><img src="img/cart/5_220.png"/></a>
+					<p>中酒网精美红包（一包五..</p>
+					<i>去购买></i>
+				</li>
+				<li class="xx">
+					<a href=""><img src="img/cart/6_220.png"/></a>
+					<p>53°茅台飞天 500ml</p>
+					<i>去购买></i>
+				</li>
+				<li class="xx">
+					<a href=""><img src="img/cart/7_220.png"/></a>
+					<p>百加得冰锐朗姆预调酒橙味</p>
+					<i>去购买></i>
+				</li>
+				<li class="xx">
+					<a href=""><img src="img/cart/8_220.png"/></a>
+					<p>百加得冰锐朗姆预调酒青..</p>
+					<i>去购买></i>
+				</li>
+				<li class="xx">
+					<a href=""><img src="img/cart/9_220.png"/></a>
+					<p>百加得冰锐朗姆预调酒蓝..</p>
+					<i>去购买></i>
+				</li>
+				<li class="xx last">
+					<a href=""><img src="img/cart/10_220.png"/></a>
+					<p>bacardi百加得冰锐草莓味 ..</p>
+					<i>去购买</i>
+				</li>
+			</ul>
+		</div>
+		
+		
+		
+		
+		
+	</body>
+</html>

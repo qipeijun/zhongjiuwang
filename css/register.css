@@ -1,0 +1,276 @@
+body{
+	font-size: 12px;
+	font-family: "microsoft yahei";
+}
+.header-outer{
+	height: 30px;
+	background: #f7f7f7;
+	border-bottom: 1px solid #eeeeee;
+}
+.header{
+	width: 990px;
+	height: 30px;
+	margin: 0 auto;
+	line-height: 30px;
+}
+.header .collect{
+	display: block;
+	float: left;
+}
+.header .collect i{
+	display: block;
+	float: left;
+	width: 13px;
+	height: 13px;
+	margin-top: 9px;
+	margin-right: 4px;
+	background: url(../img/register/20130725.png);
+}
+.header .collect a{
+	display: block;
+	float: left;
+	color: #333333;
+}
+.header a:hover{
+	color: rgb(227,56,60);
+	text-decoration: underline;
+}
+.header .loginbar{
+	float: right;
+}
+#logo{
+	width: 990px;
+	margin: 0 auto;
+	height: 80px;
+}
+#logo a{
+	display: block;
+	float: left;
+	margin-top: 10px;
+	margin-right: 20px;
+}
+#logo b{
+	display: block;
+	float: left;
+	width: 150px;
+	height: 46px;
+	background: #f1f1f1;
+	line-height: 46px;
+	text-align: center;
+	color: #545454;
+	font-size: 28px;
+	font-weight: 200;
+	margin-top: 18px;
+}
+.m{
+	width: 990px;
+	height: 566px;
+	margin: 0 auto;
+}
+.m .mt{
+	width: 990px;
+	height: 32px;
+	line-height: 32px;
+	background: #f2f2f2;
+}
+.m .mt span{
+	display: block;
+	margin-right: 20px;
+	float: right;
+	color: #545454;
+}
+.m .mt span a{
+	font-size: 13px;
+	color: #005aa0;
+}
+.m .mt span a:hover{
+	text-decoration: underline;
+}
+.m .mc{
+	width: 988px;
+	height: 496px;
+	border: 1px solid #dddddd;
+	padding-top: 38px;
+}
+.m .mc li{
+	width: 988px;
+	height: 36px;
+	margin-bottom: 31px;
+	
+}
+.m .mc li input{
+	line-height: 30px;
+	border: none;
+	outline: none;
+	width: 90%;
+	height: 90%;
+}
+.m .mc li label{
+	display: block;
+	float: left;
+	width: 180px;
+	text-align: right;
+	font-size: 14px;
+	line-height: 38px;
+	color: #999999;
+}
+.m .mc li label b{
+	padding: 0 4px;
+	color: rgb(227,56,60);
+}
+.m .mc .mc1{
+	float: left;
+	width: 268px;
+	height: 36px;
+	border: 1px solid #cccccc;
+	margin-left: 19px;
+	position: relative;
+}
+.m .mc i{
+	display: block;
+	width: 16px;
+	height: 16px;
+	float: right;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+.m .mc .mc1 .i-name{
+	background: url(../img/register/login-all-bg.png) -373px -111px;
+}
+.m .mc .hint{
+	width: 266px;
+	height: 36px;
+	float: left;
+	margin-left: 5px;
+	border: 1px solid rgb(221,221,221);
+	background: rgb(247,247,247);
+	padding: 0 5px;
+	line-height: 36px;
+	font-size: 12px;
+	color: rgb(102,102,102);
+	display: none;
+}
+.m .mc .error{
+	width: 266px;
+	height: 36px;
+	float: left;
+	margin-left: 5px;
+	border: 1px solid rgb(255,189,190);
+	background: rgb(255,235,235);
+	padding: 0 5px;
+	line-height: 36px;
+	font-size: 12px;
+	color: rgb(227,57,60);
+	display: none;
+}
+#yzm{
+	width: 90%;
+}
+.m .mc .mc2{
+	width: 132px;
+	margin-right: 5px;
+}
+.m .mc .Imgcode{
+	display: block;
+	width: 133px;
+	height: 36px;
+	font-size: 28px;
+	line-height: 36px;
+	text-align: center;
+	color: lightseagreen;
+	float: left;
+	cursor: pointer;
+}
+.m .mc .i-pwd{
+	background: url(../img/register/login-all-bg.png) -346px -108px;
+}
+
+.m .mc .mc4{
+	width: 132px;
+	margin-right: 5px;
+}
+.m .mc .Pcode{
+	display: block;
+	width: 133px;
+	height: 36px;
+	font-size: 12px;
+	line-height: 36px;
+	text-align: center;
+	color: #333333;
+	background: #f4f4f4;
+	border: 1px solid #dddddd;
+	float: left;
+	cursor: pointer;
+}
+
+.m .mc .mc-pwd .hint{
+	line-height: 16px;
+}
+.m .mc .mc-pwd .error{
+	line-height: 16px;
+}
+
+.m .mc .dealBtn-outer{
+	margin-top: 4px;
+}
+#dealBtn{
+	width: 12px;
+	height: 12px;
+	float: left;
+	margin-left: 202px;
+	margin-top: 14px;
+}
+.m .mc .dealBtn-outer label{
+	text-align: left;
+	height: 100%;
+	width: 200px;
+	font-size: 12px;
+	color: #545454;
+	margin-right: 57px;
+}
+.m .mc .dealBtn-outer label a{
+	color: rgb(227,56,60);
+}
+.m .mc .dealBtn-outer label a:hover{
+	text-decoration: underline;
+}
+
+#Btn{
+	width: 270px;
+	height: 36px;
+	background: #e33d3f;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 18px;
+	color: white;
+	font-weight: 800;
+	margin-left: 200px;
+}
+#Btn:hover{
+	background: rgb(239,80,84);
+}
+
+
+
+
+
+.copy{
+	display: block;
+	width: 990px;
+	margin: 0 auto;
+	line-height: 40px;
+	color: #545454;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>登录</title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+		<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="login-outer">
+			<div class="login-warp">
+				<div id="logo">
+					<a href="index.html"><img src="img/login/logo.png"/></a>
+					<b></b>
+				</div>
+				<div class="login">
+					<img src="img/login/pcloginpic.png"/>
+					<div class="login-w">
+						<div class="username-out">
+							<b class="i-name"></b><input type="text" class="username" placeholder="用户名" />
+						</div>
+						<div class="passwrod-out">
+							<b class="i-psw"></b><input type="password" class="passwrod" placeholder="密码" />
+						</div>
+						<div class="rm">
+							<input type="checkbox"  id="cbox" /> 
+							<label for="cbox">自动登录</label>
+							<a href="#">忘记密码</a>
+						</div>
+						<input type="button" id="btn" value="登录" />
+						
+						<!--错误提示-->
+						<div class="hint h1">请输入用户名</div>
+						<div class="hint h2">请输入密码</div>
+						<div class="hint h3">用户名和密码不匹配</div>
+						
+						
+						<div class="coagent">
+							<span>使用合作网站登录商城：</span>
+							<a class="register" href="register.html">免费注册>></a>
+							<a class="qq" href="#"></a>
+							<a class="wb" href="#"></a>
+							<a class="wx" href="#"></a>
+						</div>
+					</div>
+						
+				</div>
+				<p class="copy">Copyright &copy;" 2016   中酒网 版权所有</p>
+			</div>
+		</div>
+	</body>
+</html>

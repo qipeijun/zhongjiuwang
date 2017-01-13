@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>商品详情</title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/goods-details.css"/>
+		<script src="js/jquery-1.12.3.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.cookie.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/base.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/goods-details.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.fly.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<!--head，Nav，部分开始-->
+		<div class="header-outer">
+			<div class="header">
+				<span class="top-left">您好，欢迎来到<span class="zjw-name">中酒网！</span><a class="go" href="#">去买家中心</a></span>
+				<ul id="login">
+					<li><a class="L-line" href="login.html">请登录</a></li>
+					<li><a href="register.html">免费注册</a></li>
+				</ul>
+				<ul id="list-right">
+					<li class="my-zjw">
+						<a href="#">我的中酒网<b class="dropdown"></b></a>
+							<ol class="dropdown-menu">
+								<li><a href="#">已买到的商品</a></li>
+								<li><a href="#">我关注的商品</a></li>
+								<li><a href="#">我关注的店铺</a></li>
+							</ol>
+					</li>
+					<li><a class="car-icon" href="shopingCart.html"><em></em>购物车<span>0</span>件</a></li>
+					<li class="wx"><a href="#">微信端<b class="d-line"></b></a>
+						<div class="dropdown-wx">
+							<img src="img/base/wx.jpg"/>
+						</div>
+					</li>
+					<li class="app"><a href="#">APP <b class="d-line"></b></a>
+						<div class="dropdown-download">
+							<img src="img/base/下载.gif"/>
+							<p class="sao">扫描二维码</p>
+							<p class="xia">下载客户端</p>
+						</div>
+					</li>
+					<li class="seller">
+						<a href="#">卖家中心<b class="dropdown"></b></a>
+						<ol class="dropdown-menu-2">
+								<li><a href="#">商家入驻</a></li>
+								<li><a href="#">已卖出商品</a></li>
+								<li><a href="#">发布商品</a></li>
+								<li><a href="#">管理商品</a></li>
+							</ol>
+					</li>
+					<li class="phone-num"><a href="#">订购热线：400-798-9999</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="top-outer">
+			<div id="top">
+				<a id="logo" href="index.html"><img src="img/base/logo.png"/></a>
+				<div class="seek">
+					<div class="seekBy" >
+						商品 <b></b>
+					</div>
+					<ul class="popup" >
+						<li>商品</li>
+						<li>店铺</li>
+					</ul>
+					<input class="txt" type="text" placeholder="茅台" />
+					<a class="btn" href="#">搜索</a>
+				</div>
+				<p class="hot-word">
+					<a href="#">五粮液</a>
+					<a href="#">汾酒</a>
+					<a href="#">剑南春</a>
+					<a href="#">泸州老窖</a>
+				</p>
+				<div class="top-ad">
+					<a href="#">
+						<img src="img/base/201610211352319102520.png"/>
+					</a>
+				</div>	
+			</div>
+			<!--导航栏-->
+			<div id="nav">
+				<div id="menu">
+					<a class="cart" href="#">全部商品分类</a>
+				</div>
+				<ul id="cart-all">
+					<li class="white-spirit cart-bg">
+						<h3><i></i><a href="#">白酒</a></h3>
+						<p>
+							<a href="#">茅台</a>
+							<a class="active" href="#">天佑德</a>
+							<a href="#">五粮液</a>
+						</p>
+					</li>
+					<div class="cart-more">
+						<dl>
+							<dt>品牌</dt>
+							<dd>
+								<ul>
+									<li><a href="#">剑南春</a></li>
+									<li><a href="#">泸州老窖</a></li>
+									<li><a href="#">洋河</a></li>
+									<li><a href="#">汾酒</a></li>
+									<li><a href="#">小糊涂仙</a></li>
+									<li><a href="#">郎酒</a></li>
+									<li><a href="#">杜康</a></li>
+									<li><a href="#">古井</a></li>
+									<li><a href="#">衡水老白干</a></li>
+									<li><a href="#">孔府家</a></li>
+									<li><a href="#">西凤</a></li>
+									<li><a href="#">国台</a></li>
+									<li><a href="#">牛栏山</a></li>
+								</ul>
+							</dd>
+							<dt>香型</dt>
+							<dd>
+								<ul>
+									<li><a href="#">酱香型</a></li>
+									<li><a href="#">浓香型</a></li>
+									<li><a href="#">绵柔型</a></li>
+									<li><a href="#">清香型</a></li>
+									<li><a href="#">特香型</a></li>
+									<li><a href="#">茧香型</a></li>
+									<li><a href="#">凤香型</a></li>
+								</ul>
+							</dd>
+							<dt>产地</dt>
+							<dd>
+								<ul>
+									<li><a href="#">贵州</a></li>
+									<li><a href="#">江西</a></li>
+									<li><a href="#">四川</a></li>
+									<li><a href="#">江苏</a></li>
+									<li><a href="#">山西</a></li>
+									<li><a href="#">内蒙</a></li>
+									<li><a href="#">河南</a></li>
+									<li><a href="#">青海</a></li>
+								</ul>
+							</dd>
+						</dl>
+						
+						<div class="cart-more-ad">
+							<h3>推荐品牌</h3>
+						</div>
+					</div>
+					<li class="grape cart-bg">
+						<h3><i></i><a href="#">葡萄酒</a></h3>
+						<p>
+							<a class="active" href="#">拉菲</a>
+							<a href="#">马克威斯</a>
+							<a href="#">黄尾袋鼠</a>
+						</p>
+					</li>
+					
+					<div class="cart-more">
+						<dl>
+							<dt>品牌</dt>
+							<dd>
+								<ul>
+									<li><a href="#">佩西</a></li>
+									<li><a href="#">张裕</a></li>
+									<li><a href="#">乐船</a></li>
+									<li><a href="#">小龙船</a></li>
+									<li><a href="#">圣迪斯</a></li>
+									<li><a href="#">奔富</a></li>
+									<li><a href="#">美圣世家</a></li>
+									<li><a href="#">康迪</a></li>
+									<li><a href="#">特拉托</a></li>
+								</ul>
+							</dd>
+							<dt>品种</dt>
+							<dd>
+								<ul>
+									<li><a href="#">干红葡萄</a></li>
+									<li><a href="#">干白葡萄</a></li>
+									<li><a href="#">气泡/香槟</a></li>
+									<li><a href="#">冰酒</a></li>
+									<li><a href="#">果酒</a></li>
+									<li><a href="#">甜桃红</a></li>
+									<li><a href="#">甜白</a></li>
+								</ul>
+							</dd>
+							<dt>产地</dt>
+							<dd>
+								<ul>
+									<li><a href="#">法国</a></li>
+									<li><a href="#">西班牙</a></li>
+									<li><a href="#">智利</a></li>
+									<li><a href="#">阿根廷</a></li>
+									<li><a href="#">澳大利亚</a></li>
+									<li><a href="#">南非</a></li>
+									<li><a href="#">中国</a></li>
+									<li><a href="#">美国</a></li>
+								</ul>
+							</dd>
+						</dl>
+						
+						<div class="cart-more-ad">
+							<h3>推荐品牌</h3>
+						</div>
+					</div>
+					
+					<li class="foreign-wine cart-bg">
+						<h3><i></i><a href="#">洋酒</a></h3>
+						<p>
+							<a class="active" href="#">马爹利</a>
+							<a href="#">人头马</a>
+							<a href="#">芝华士</a>
+						</p>
+					</li>
+					
+					<div class="cart-more">
+						<dl>
+							<dt>品牌</dt>
+							<dd>
+								<ul>
+									<li><a href="#">皇家贝斯</a></li>
+									<li><a href="#">兄弟</a></li>
+									<li><a href="#">深蓝</a></li>
+									<li><a href="#">白香甜</a></li>
+									<li><a href="#">绝对伏特加</a></li>
+									<li><a href="#">杰克丹尼</a></li>
+									<li><a href="#">百龄坛</a></li>
+									<li><a href="#">百加得</a></li>
+									<li><a href="#">尊尼获加</a></li>
+									<li><a href="#">叶卡</a></li>
+									<li><a href="#">轩尼诗</a></li>
+									<li><a href="#">皇家礼炮</a></li>
+									<li><a href="#">摩根船长</a></li>
+								</ul>
+							</dd>
+							<dt>品种</dt>
+							<dd>
+								<ul>
+									<li><a href="#">聚会用酒</a></li>
+									<li><a href="#">商务用酒</a></li>
+								</ul>
+							</dd>
+							<dt>产地</dt>
+							<dd>
+								<ul>
+									<li><a href="#">中国</a></li>
+									<li><a href="#">法国</a></li>
+									<li><a href="#">英国</a></li>
+									<li><a href="#">美国</a></li>
+								</ul>
+							</dd>
+						</dl>
+						
+						<div class="cart-more-ad">
+							<h3>推荐品牌</h3>
+						</div>
+					</div>
+					
+					<li class="yellow-wine cart-bg">
+						<h3><i></i><a href="#">黄酒</a></h3>
+						<p>
+							<a href="#">女儿红</a>
+							<a class="active" href="#">劲酒</a>
+							<a href="#">尧喝货</a>
+						</p>
+					</li>
+					
+					<div class="cart-more">
+						<dl>
+							<dt>品牌</dt>
+							<dd>
+								<ul>
+									<li><a href="#">塔牌</a></li>
+									<li><a href="#">古越龙山</a></li>
+									<li><a href="#">石库门</a></li>
+									<li><a href="#">会稽山</a></li>
+									<li><a href="#">唐宋</a></li>
+								</ul>
+							</dd>
+							<dt>品种</dt>
+							<dd>
+								<ul>
+									<li><a href="#">聚会用酒</a></li>
+									<li><a href="#">礼节拜访</a></li>
+									<li><a href="#">婚庆用酒</a></li>
+								</ul>
+							</dd>
+						</dl>
+						
+						<div class="cart-more-ad">
+							<h3>推荐品牌</h3>
+						</div>
+					</div>
+					
+					<li class="gift-box cart-bg">
+						<h3><i></i><a href="#">礼品专区</a></h3>
+						<p>
+							<a class="active" href="#">国台好礼</a>
+							<a href="#">成龙祥凤</a>
+						</p>
+					</li>
+					
+					<div class="cart-more">
+						<dl>
+							<dt>品牌</dt>
+							<dd>
+								<ul>
+									<li><a href="#">礼盒</a></li>
+									<li><a href="#">五粮液</a></li>
+									<li><a href="#">汾酒</a></li>
+									<li><a href="#">茅台</a></li>
+									<li><a href="#">剑南春</a></li>
+									<li><a href="#">张裕</a></li>
+									<li><a href="#">拉菲</a></li>
+								</ul>
+							</dd>
+							<dt>类型</dt>
+							<dd>
+								<ul>
+									<li><a href="#">酱香型</a></li>
+									<li><a href="#">浓香型</a></li>
+									<li><a href="#">干红葡萄</a></li>
+									<li><a href="#">干白葡萄</a></li>
+								</ul>
+							</dd>
+							<dt>产地</dt>
+							<dd>
+								<ul>
+									<li><a href="#">四川</a></li>
+									<li><a href="#">贵州</a></li>
+									<li><a href="#">法国</a></li>
+									<li><a href="#">美国</a></li>
+								</ul>
+							</dd>
+						</dl>
+						
+						<div class="cart-more-ad">
+							<h3>推荐品牌</h3>
+						</div>
+					</div>
+					
+					<li class="webbing cart-bg">
+						<h3><i></i><a href="#">婚庆专区</a></h3>
+						<p>
+							<a class="active" href="#">茅台</a>
+							<a href="#">拉菲</a>
+							<a href="#">五粮液</a>
+							<a href="#">张裕</a>
+						</p>
+					</li>
+					
+					<div class="cart-more">
+						<dl>
+							<dt>品牌</dt>
+							<dd>
+								<ul>
+									<li><a href="#">剑南春</a></li>
+									<li><a href="#">泸州老窖</a></li>
+									<li><a href="#">伊莎特</a></li>
+									<li><a href="#">佩西</a></li>
+									<li><a href="#">卡莎玛利亚</a></li>
+									<li><a href="#">龙船康帝</a></li>
+									<li><a href="#">郎酒</a></li>
+								</ul>
+							</dd>
+							<dt>种类</dt>
+							<dd>
+								<ul>
+									<li><a href="#">白酒</a></li>
+									<li><a href="#">红酒</a></li>
+									<li><a href="#">洋酒</a></li>
+									<li><a href="#">起泡酒</a></li>
+									<li><a href="#">黄酒</a></li>
+								</ul>
+							</dd>
+							<dt>产地</dt>
+							<dd>
+								<ul>
+									<li><a href="#">贵州</a></li>
+									<li><a href="#">四川</a></li>
+									<li><a href="#">南非</a></li>
+									<li><a href="#">法国</a></li>
+									<li><a href="#">英国</a></li>
+								</ul>
+							</dd>
+						</dl>
+						
+						<div class="cart-more-ad">
+							<h3>推荐品牌</h3>
+						</div>
+					</div>
+					
+				</ul>
+				
+				<ul class="nav-right">
+					<li class="nav-first"><a href="#">首页</a></li>
+					<li><a href="#">天佑德专场</a></li>
+					<li><a href="#">白酒会场</a></li>
+					<li><a href="#">红酒会场</a></li>
+					<li><a href="#">会员中心</a></li>
+					<li><a href="#">重要公告</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="trade-outer">
+			<div class="trade">
+				<span>
+					<b><a href="#">酒类</a></b>
+					&nbsp;>&nbsp;
+					<a href="#">洋酒</a>
+					&nbsp;>&nbsp;
+					<a href="#">锐澳</a>
+					&nbsp;>&nbsp;
+					<a class="trade-title" href="#"></a>
+				</span>
+				<div class="trade-show">
+					<div id="show">
+						<img src=""/>
+						<div id="showArea">
+							
+						</div>
+					</div>
+					<ul id="show-small">
+						<li><img src=""/></li>
+						<li><img src=""/></li>
+						<li><img src=""/></li>
+						<li><img src=""/></li>
+						<li><img src=""/></li>
+					</ul>
+				</div>
+				<div id="showBig">
+					<img id="showBigImg" src="img/goods/1.png"/>
+				</div>
+				
+				<div class="shop-msg">
+					<p class="shop-title"></p>
+					<span class="shop-ad"></span>
+					<div class="t">
+						<span class="t1">价格</span>
+						<b class="t-price"></b>
+						<span class="t2">闪电发货</span>
+					</div>
+					<div class="b">
+						<span class="b1">销量</span>
+						<span class="b2"></span>
+						<span class="b1">评价</span>
+						<a class="b2 b3" href="#">66</a>
+						<span class="b1">评分：</span>
+						<span class="b4"></span>
+					</div>
+					<div class="c">
+						<span class="c1">促销</span>
+						<span class="c2">满免</span>
+						<span class="c3">单笔订单满<b class="c4">99.00</b>元免运费</span>
+					</div>
+					<div class="d">
+						<span class="d1">库存</span>
+						<span class="d2"></span>
+					</div>
+					<div class="e">
+						<span class="e1">物流</span>
+						<span class="e2">配送至</span>
+						<select class="e3" name="">
+							<option value=""></option>
+						</select>
+						<span class="e4">支持货到付款</span>
+					</div>
+					<div class="shop-buy">
+						<span class="sl">数量</span>
+						<span class="jian">-</span>
+						<input type="text" class="Val" value="1" />
+						<span class="jia">+</span>	
+					</div>
+					<div class="buy">
+						<a class="buyNow"><i></i>立即购买</a>
+						<a class="addCar"><i></i>加入购物车</a>
+					</div>
+				</div>
+				
+				<div class="shop-name">
+					<a class="shop-name-logo" href="#"><img src="img/goods/logo_671.jpg"/></a>
+					<div class="shop-name-n">
+						<span class="n1">自营</span>
+						<a href="#">中酒自营店</a>
+					</div>
+					<dl class="shop-serve">
+						<dt>服务支持：</dt>
+						<dd class="s1"><img src="img/goods/Security.jpg"/><span>消费者保障服务</span></dd>
+						<dd class="s2"><img src="img/goods/TimelyDelivery.jpg"/><span>及时发货</span></dd>
+					</dl>
+				</div>
+				
+				<div class="btn-collect">
+					<a class="collect" href="#">收藏商品</a>
+					<span class="icon">
+						分享到：
+						<a class="wb" href="#"></a>
+						<a class="qqkj" href="#"></a>
+						<a class="wx" href="#"></a>
+					</span>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		
+		<!--详情介绍-->
+		<div class="details-outer">
+			<div class="d-left">
+				<ul class="se">
+					<li class="se1">本店搜索</li>
+					<li class="se2">
+						关键字 <input type="text" />
+					</li>
+					<li class="se3">
+						价格<input class="se31" type="text" /><b>-</b><input type="text" />
+					</li>
+					<li class="se4">
+						<input type="button" value="搜索" />
+					</li>
+				</ul>
+				
+				<ul class="store-class">
+					<li class="sc1">店铺分类</li>
+					<li class="sc2">
+						<s class="sc2a"></s><a href="#">白酒</a>
+					</li>
+					<dl class="cc" style="display: block;">
+						<dd><a href="#">五粮液</a></dd>
+						<dd><a href="#">茅台</a></dd>
+						<dd><a href="#">青稞酒</a></dd>
+						<dd><a href="#">剑南春</a></dd>
+					</dl>
+					<li class="sc2">
+						<s class="sc2b"></s><a href="#">红酒</a>
+					</li>
+					<dl class="cc">
+						<dd><a href="#">拉菲</a></dd>
+						<dd><a href="#">黄尾袋鼠</a></dd>
+						<dd><a href="#">马克斯威</a></dd>
+						<dd><a href="#">张裕</a></dd>
+					</dl>
+					<li class="sc2 sc3">
+						<s class="sc2b"></s><a href="#">洋酒</a>
+					</li>
+					<dl class="cc">
+						<dd><a href="#">伏特加</a></dd>
+						<dd><a href="#">马爹利</a></dd>
+						<dd><a href="#">人头马</a></dd>
+						<dd><a href="#">芝华士</a></dd>
+					</dl>
+				</ul>
+				
+				<ul class="pop">
+					<li class="pop0">
+						<h3 class="cur">热门销售</h3>
+						<h3>热门推荐</h3>
+					</li>
+					<li class="pop1">
+						<dl>
+							<dd>
+								<a href="#"><img src="img/goods/1_220.png"/></a>
+								<a href="#">52°剑南春 500ml</a>
+								<span><b>1</b>热销19831件</span>
+							</dd>
+							<dd>
+								<a href="#"><img src="img/goods/2_220.png"/></a>
+								<a href="#">中酒网无纺布购物袋</a>
+								<span><b>2</b>热销17700件</span>
+							</dd>
+							<dd>
+								<a href="#"><img src="img/goods/3_220.png"/></a>
+								<a href="#">彩色海马刀</a>
+								<span><b>3</b>热销16599件</span>
+							</dd>
+							<dd>
+								<a href="#"><img src="img/goods/4_220.png"/></a>
+								<a href="#">53°茅台飞天 500ml</a>
+								<span><b>4</b>热销9237件</span>
+							</dd>
+							<dd>
+								<a href="#"><img src="img/goods/5_220.png"/></a>
+								<a href="#">烟灰缸（10cm）样式随机发货</a>
+								<span><b>5</b>热销6482件</span>
+							</dd>
+						</dl>
+					</li>
+					<li class="pop1 pop3">
+						<dl>
+							<dd>
+								<a href="#"><img src="img/goods/6_220.png"/></a>
+								<a href="#">11.5°张裕干红葡萄酒750ml（6瓶装）</a>
+								<span><b>1</b>关注6次</span>
+							</dd>
+							<dd>
+								<a href="#"><img src="img/goods/7_220.png"/></a>
+								<a href="#">52°剑南春 500ml</a>
+								<span><b>2</b>关注6次</span>
+							</dd>
+							<dd>
+								<a href="#"><img src="img/goods/8_220.png"/></a>
+								<a href="#">52°国窖1573 500ml</a>
+								<span><b>3</b>关注5次</span>
+							</dd>
+							<dd>
+								<a href="#"><img src="img/goods/9_220.png"/></a>
+								<a href="#">53°茅台王子酒（旧包装） 500ml（6瓶装）</a>
+								<span><b>4</b>关注5次</span>
+							</dd>
+							<dd>
+								<a href="#"><img src="img/goods/10_220.png"/></a>
+								<a href="#">52° 茅台醇原浆 500ml （6瓶装）</a>
+								<span><b>5</b>关注5次</span>
+							</dd>
+						</dl>
+					</li>
+				</ul>
+			</div>
+			<div class="d-rigth">
+				<div class="t-nav">
+					<ul class="t-tab">
+						<li class="t-active">
+							<span></span>
+							<i></i>
+							<a href="#">商品介绍</a>
+						</li>
+						<li>
+							<span></span>
+							<i></i>
+							<a href="#">商品评价<b>(66)</b></a>
+						</li>
+						<li>
+							<span></span>
+							<i></i>
+							<a href="#">商品咨询<b>(0)</b></a>
+						</li>
+					</ul>
+				</div>
+				<div class="details-pic">
+					<table border="1" cellspacing="0" cellpadding="0">
+						<tr>
+							<td>商品名称：<span class="trade-title"></span></td>
+							<td>商品货号：C0001489</td>
+							<td>品牌：锐澳</td>
+						</tr>
+						<tr>
+							<td>产地：中国</td>
+							<td>适用：聚会用酒</td>
+							<td></td>
+						</tr>
+					</table>
+					<img src=""/>
+					<img src=""/>
+					<img src=""/>
+					<img src=""/>
+					<img src=""/>
+					<img src=""/>
+					<img src=""/>
+					<img src=""/>
+				</div>
+				
+				
+			</div>
+		</div>
+		
+		
+		
+		
+		
+
+
+		
+		<!--底部footer层，-->
+		<div class="footer1-outer">
+			<div id="footer1">
+				<ul>
+					<li class="zp">
+						<i></i>
+						<h3>正品保障</h3>
+						<p>厂家直销 正品防伪</p>
+					</li>
+					<li class="lj">
+						<i></i>
+						<h3>领军 o2o</h3>
+						<p>中国酒类 o2o第一家</p>
+					</li>
+					<li class="wl">
+						<i></i>
+						<h3>无理由退货</h3>
+						<p>拆封无条件退货</p>
+					</li>
+					<li class="sd">
+						<i></i>
+						<h3>闪电配送</h3>
+						<p>专业配送 安全到达</p>
+					</li>
+					<li class="bw">
+						<i></i>
+						<h3>百万口碑</h3>
+						<p>400万用户的认可</p>
+					</li>
+					<li class="jp">
+						<i></i>
+						<h3>金牌服务</h3>
+						<p>7*24小时贴心服务</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="footer2-outer">
+			<div id="footer2">
+				<div class="zj-icon">
+					<a href="#">
+						<img src="img/base/zj2.png"/>
+					</a>
+					<a href="#">
+						<img src="img/base/ls.png"/>
+					</a>
+					<a href="#">
+						<img src="img/base/yt.png"/>
+					</a>
+				</div>
+				<dl class="wrap-link">
+					<dt class="Title"><h3>购物流程</h3></dt>
+					<dd><a href="#">购物流程</a></dd>
+					<dd><a href="#">用户注册协议</a></dd>
+					<dd><a href="#">会员积分</a></dd>
+					<dd><a href="#">发票问题</a></dd>
+					<dd><a href="#">优惠券问题</a></dd>
+				</dl>
+				<dl class="wrap-link">
+					<dt class="Title"><h3>配送说明</h3></dt>
+					<dd><a href="#">99免运费</a></dd>
+					<dd><a href="#">配送说明</a></dd>
+					<dd><a href="#">快递查询</a></dd>
+					<dd><a href="#">验货与签收</a></dd>
+				</dl>
+				<dl class="wrap-link">
+					<dt class="Title"><h3>支付方式</h3></dt>
+					<dd><a href="#">支付版</a></dd>
+					<dd><a href="#">银联/信用卡</a></dd>
+					<dd><a href="#">微信支付</a></dd>
+					<dd><a href="#">货到付款</a></dd>
+					<dd><a href="#">账户余额支付</a></dd>
+				</dl>
+				<dl class="wrap-link">
+					<dt class="Title"><h3>售后服务</h3></dt>
+					<dd><a href="#">常见问题</a></dd>
+					<dd><a href="#">服务承诺</a></dd>
+					<dd><a href="#">退款说明</a></dd>
+					<dd><a href="#">退换货政策</a></dd>
+					<dd><a href="#">退换货流程</a></dd>
+				</dl>
+				<dl class="wrap-link">
+					<dt class="Title"><h3>服务保障</h3></dt>
+					<dd><a href="#">30分钟快速响应</a></dd>
+					<dd><a href="#">7*24小时贴心服务</a></dd>
+					<dd><a href="#">真品防伪四码合一</a></dd>
+				</dl>
+				
+				<ul class="qrcode">
+					<li>
+						<h3>手机中酒</h3>
+						<img src="img/base/mob.jpg"/>
+						<a href="#">下载移动客户端</a>
+					</li>
+					<li>
+						<h3>中酒微信</h3>
+						<img src="img/base/wx.jpg"/>
+						<a href="#">中酒官方微信</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="footer3-outer">
+			<div id="footer3">
+				<a href="#">关于中酒</a>
+				<a href="#">媒体报道</a>
+				<a href="#">商务合作</a>
+				<a href="#">品牌入驻</a>
+				<a href="#">加入中酒</a>
+				<a href="#">商家加盟</a>
+				<a class="last-a" href="#">联系我们</a>
+			</div>
+		</div>
+		<div class="footer4-outer">
+			<div id="footer4">
+				<p>Copyright © 2016 中酒网(www.zhongjiu.cn) 版权所有 京ICP备12022216号-2 | 京公网安备 11010502026701 | 购买前请确认达到法定饮酒年龄！中酒网不销售任何含酒精产品给18岁以下人士！</p>
+				<div class="msg">
+					<a href="#"><img src="img/base/authentication_01.png"/></a>
+					<a href="#"><img src="img/base/brand_bottom_large.jpg"/></a>
+					<a href="#"><img src="img/base/cnnic.png"/></a>
+					<a href="#"><img src="img/base/authentication_05.png"/></a>
+					<a href="#"><img src="img/base/authentication_07.png"/></a>
+					<a href="#"><img src="img/base/authentication_09.png"/></a>
+				</div>
+			</div>
+		</div>
+		
+		<!--右侧工具栏-->
+		<div id="fixed-right">
+			<ul class="fixed-menu">
+				<li class="right-user right-menu">
+					<i></i>
+					<span class="ups">个人中心</span>
+				</li>
+				<s></s>
+				<li class="right-car right-menu">
+					<i></i>
+					<p>购 物 车</p>
+					<b id="end">0</b>
+				</li>
+				<s></s>
+				<li class="right-asset right-menu">
+					<i></i>
+					<span class="ups">资产中心</span>
+				</li>
+				<li class="right-like right-menu">
+					<i></i>
+					<span class="ups">关注商品</span>
+				</li>
+				<li class="right-history right-menu">
+					<i></i>
+					<span class="ups">浏览历史</span>
+				</li>
+			</ul>
+			<div class="btn-top right-menu">
+				<i class="go-top"></i>
+				<span class="ups">返回顶部</span>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,207 @@
+body{background: #f2f2f2;font-family: "微软雅黑";}
+.login-outer{
+	width: 100%;
+	height: 100%;
+	padding-top: 10px;
+}
+.login-warp{
+	width: 900px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#logo{
+	margin-bottom: 68px;
+	overflow: hidden;
+}
+#logo a{
+	display: block;
+	float: left;
+}
+#logo b{
+	display: block;
+	float: left;
+	margin-left: 20px;
+	margin-top: 5px;
+	width: 111px;
+	height: 46px;
+	background: url(../img/login/login-all-bg.png) 0 -131px;
+}
+.login{
+	width: 888px;
+	height: 400px;
+	border: 6px solid #e8e8e8;
+}
+.login img{
+	width: 460px;
+	height: 400px;
+	float: left;
+}
+.login .login-w{
+	width: 376px;
+	height: 364px;
+	padding-left: 52px;
+	padding-top: 34px;
+	background: white;
+	float: left;
+	position: relative;
+}
+.login input{
+	border: none;
+	outline: none;
+	font-size: 14px;
+	line-height: 42px;
+	color: #a9a9a9;
+	width: 80%;
+}
+.login .username-out,.login .passwrod-out{
+	width: 279px;
+	height: 44px;
+	border: 1px solid #b8c1c8;
+	padding-left: 37px;
+	position: relative;
+}
+
+.login .passwrod-out{
+	margin-top: 30px;
+	margin-bottom: 20px;
+}
+.login .username-out b,.login .passwrod-out b{
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+}
+.login .username-out .i-name{
+	background: url(../img/login/login-inp-bg.png) no-repeat;
+}
+.login .passwrod-out .i-psw{
+	background: url(../img/login/login-inp-bg.png) 0 -22px;
+}
+
+.copy{
+	line-height: 98px;
+	text-align: center;
+	font-size: 13px;
+	color: #545454;
+}
+
+.login .rm{
+	width: 318px;
+	height: 28px;
+	font-size: 12px;
+	padding-top: 8px;
+	color: #98999a;
+	vertical-align: middle;
+}
+#cbox{
+	width: 13px;
+	height: 13px;
+	margin-top: 4px;
+	display: inline-block;
+}
+.login .rm a{
+	display: block;
+	float: right;
+	margin-top: 6px;
+}
+.login .rm label{
+	vertical-align: text-top;
+}
+#btn{
+	width:321px;
+	height: 46px;
+	font-family: "microsoft yahei";
+	text-align: center;
+	line-height: 46px;
+	font-size: 18px;
+	color: white;
+	background: #f6342f;
+	border-radius: 4px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+#btn:hover{
+	background: rgb(255,59,54);
+}
+
+
+.login .login-w .hint{
+	width: 266px;
+	height: 25px;
+	border: 1px solid rgb(255,189,190);
+	background: rgb(255,235,235);
+	padding: 0 5px;
+	line-height: 25px;
+	font-size: 12px;
+	color: rgb(227,57,60);
+	position: absolute;
+	left: 52px;
+	display: none;
+}
+.login .login-w .h1{
+	top: 82px;
+}
+.login .login-w .h2,.login .login-w .h3{
+	top: 158px;
+}
+
+
+
+
+
+
+
+.login .coagent{
+	margin-top: 48px;
+	width: 321px;
+	overflow: hidden;
+	font-size: 13px;
+}
+.login .coagent span{
+	display: block;
+	width: 249px;
+	color: #6a7c86;
+	float: left; 
+	margin-bottom: 20px;
+}
+.login .coagent a{
+	display: block;
+}
+.login .coagent .register{
+	float: right;
+	color: #698fc2;
+	margin-bottom: 20px;
+}
+.login .coagent .qq,.login .coagent .wb,.login .coagent .wx{
+	width: 32px;
+	height: 32px;
+	float: left;
+}
+.login .coagent .qq{
+	background: url(../img/login/qq1.png);
+}
+.login .coagent .qq:hover{
+	background: url(../img/login/qq2.png);
+}
+.login .coagent .wb{
+	margin-left: 20px;
+	margin-right: 20px;
+	background: url(../img/login/weibo1.png);
+}
+.login .coagent .wb:hover{
+	background: url(../img/login/weibo2.png);
+}
+.login .coagent .wx{
+	background: url(../img/login/weixin1.png);
+}
+.login .coagent .wx:hover{
+	background: url(../img/login/weixin2.png);
+}
+
+
+
+
+
+
